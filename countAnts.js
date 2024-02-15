@@ -1,10 +1,8 @@
-let deadAnts = '';
-
 const antChain = '...ant...ant..nat.ant.t..ant...ant..ant..ant.anant..t';
 
 deadAntCounter = function(antChain) 
 {
-        deadAnts = antChain.replaceAll('ant', '');
+        let deadAnts = antChain.replaceAll('ant', '');
 
         let heads = deadAnts.match(/a/g).length;
         let bodys = deadAnts.match(/n/g).length;
